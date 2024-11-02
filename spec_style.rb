@@ -2,8 +2,7 @@ require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../hw/student'
 
-Minitest::Reporters.use! [
-  Minitest::Reporters::JUnitReporter.new, 
+Minitest::Reporters.use! [ 
   Minitest::Reporters::HtmlReporter.new(
   reports_dir: '../hw/spec_reports',
     reports_filename: 'students_spec_tests.html', 
